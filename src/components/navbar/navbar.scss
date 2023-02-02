@@ -1,0 +1,36 @@
+$main_color: #3a31b2;
+
+.logo-navbar-circle {
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  margin-left: 30px;
+}
+.navbar {
+  background-color: $main_color !important;
+}
+
+.navbar-right {
+  margin-right: 30px;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+@media (max-width: 340px) {
+  .nav.navbar-nav {
+    width: 100%;
+  }
+  .navbar-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    img {
+      margin: 0;
+    }
+  }
+
+  .navbar-right {
+    margin: 0;
+  }
+}

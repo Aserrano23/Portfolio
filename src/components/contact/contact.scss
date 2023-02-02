@@ -1,0 +1,21 @@
+$main_color: #3a31b2;
+
+input,
+textarea {
+  width: 70%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid $main_color;
+  color: $main_color;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+textarea {
+  height: 200px;
+}
+
+.submit-form {
+  width: fit-content;
+  padding: 0 10%;
+}

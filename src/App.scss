@@ -1,0 +1,99 @@
+$main_color: #3a31b2;
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 15pt;
+}
+
+.as-btn {
+  border: 1px solid $main_color;
+  background-color: $main_color;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.as-btn-disabled {
+  border: 0;
+  background-color: #757575;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: default !important;
+}
+
+.as-btn:hover {
+  border: 1px solid $main_color;
+  background-color: #ffffff;
+  color: $main_color;
+  transition: 0.4s;
+}
+
+.as-btn-outline {
+  border: 1px solid $main_color;
+  background-color: transparent;
+  color: $main_color;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.as-btn-outline:hover {
+  background-color: $main_color;
+  color: #ffffff;
+  transition: 0.4s;
+}
+
+.all-center {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50vh;
+  text-align: center;
+}
+.as-btn-outline-white {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.as-btn-outline-white:hover {
+  background-color: #ffffff;
+  color: $main_color;
+  transition: 0.4s;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.center-v {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.end {
+  display: flex;
+  justify-content: end;
+}
+
+//LOADER
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
