@@ -2,7 +2,7 @@ $main_color: #3a31b2;
 
 input,
 textarea {
-  width: 70%;
+  width: 100%;
   height: 50px;
   border-radius: 5px;
   border: 1px solid $main_color;
@@ -13,9 +13,15 @@ textarea {
 
 textarea {
   height: 200px;
+  width: 1005;
 }
 
 .submit-form {
   width: fit-content;
   padding: 0 10%;
+}
+
+.contact-photo {
+  filter: grayscale(100%);
+  border-radius: 5px;
 }
