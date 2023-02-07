@@ -58,7 +58,6 @@ const SpotifyNowPlaying = () => {
     const getSongDetails = async () => {
       const accessToken = await getAccessToken();
       const song = await getCurrentlyPlaying(accessToken);
-      console.log(song);
       if (song !== "NOT_PLAYING" && song.currently_playing_type !== "episode") {
         if (song.item.name.length > 20 || song.item.artists.length > 5) {
           setIsLongTitle(true);
