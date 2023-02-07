@@ -87,6 +87,11 @@ p {
   justify-content: end;
 }
 
+.start {
+  display: flex;
+  justify-content: start;
+}
+
 //LOADER
 .blink_me {
   animation: blinker 1s linear infinite;

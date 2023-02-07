@@ -10,7 +10,7 @@ import Projects from "../projects/projects";
 import BlockchainSection from "../blockchain-section/blockchain-section";
 import Techs from "../techs/techs";
 import Footer from "../footer/footer";
-
+import SpotifyNowPlaying from "../spotify-now-playing/spotify-now-playing";
 function Home() {
   const t = useTranslate();
   const setLanguage = useSetLanguage();
@@ -79,6 +79,7 @@ function Home() {
         <BlockchainSection />
         <Separator />
         <Contact />
+        <SpotifyNowPlaying />
       </main>
 
       <Footer />

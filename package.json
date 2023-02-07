@@ -12,6 +12,7 @@
     "@tolgee/react": "^4.9.2",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.2",
+    "buffer": "^6.0.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",

@@ -1,11 +1,14 @@
 import "./footer.scss";
 import Separator from "../separator/separator";
 import { T } from "@tolgee/react";
+import SpotifyNowPlaying from "../spotify-now-playing/spotify-now-playing";
+
 const Footer = () => {
   return (
     <div className="purple-box mt-5 wow fadeIn">
       <div className="container center-v">
-        <div className="circle mb-4 wow fadeInDown">
+        
+        <div className="circle mt-4 mb-4 wow fadeInDown">
           <a href="https://adrianserrano.me">
             <img src="/assets/images/logo192.png" alt="" width={"70px"} />
           </a>
