@@ -7,7 +7,6 @@ const Footer = () => {
   return (
     <div className="purple-box mt-5 wow fadeIn">
       <div className="container center-v">
-        
         <div className="circle mt-4 mb-4 wow fadeInDown">
           <a href="https://adrianserrano.me">
             <img src="/assets/images/logo192.png" alt="" width={"70px"} />
@@ -73,6 +72,16 @@ const Footer = () => {
               className="rrss-circle"
             >
               <img src="/assets/images/instagram.png" width="20" alt="" />
+            </a>
+          </div>
+          <div className="col rrss-container">
+            <a
+              href="https://github.com/Aserrano23"
+              target="_blank"
+              rel="noreferrer"
+              className="rrss-circle"
+            >
+              <img src="/assets/images/github-logo.png" width="25" alt="" />
             </a>
           </div>
         </div>
