@@ -3,7 +3,7 @@ import { T } from "@tolgee/react";
 import Separator from "../separator/separator";
 const Techs = () => {
   return (
-    <div className="container">
+    <div className="container container-techs">
       <div className="row">
         <div className="col wow fadeIn">
           <h1>

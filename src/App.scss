@@ -102,3 +102,9 @@ p {
     opacity: 0;
   }
 }
+
+@media (max-width: 340px) {
+  p {
+    font-size: 12pt;
+  }
+}

@@ -33,3 +33,31 @@
   padding: 10px 20px;
   width: 100%;
 }
+
+@media (max-width: 340px) {
+  .purple-box {
+    padding: 10px !important;
+  }
+  .white-container {
+    padding: 20px;
+  }
+  .expert,
+  .beginner,
+  .intermediate {
+    font-size: 13pt;
+  }
+}
+
+@media (max-width: 240px) {
+  .purple-box {
+    padding: 1px !important;
+  }
+  .white-container {
+    padding: 10px;
+  }
+  .expert,
+  .beginner,
+  .intermediate {
+    font-size: 10pt;
+  }
+}

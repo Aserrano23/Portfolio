@@ -25,7 +25,7 @@ const Contact = () => {
       <div className="row">
         <div className="col-xl-6 col-lg-6 col-md-6 col-12 center-v">
           <img
-            className="contact-photo"
+            className="contact-photo wow fadeIn"
             src="/assets/images/adrian.jpg"
             width="300"
             alt=""
