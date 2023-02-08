@@ -82,7 +82,9 @@ const SpotifyNowPlaying = () => {
     <div className="container center-v mt-5">
       <div className="row">
         <div className="col">
-          <h3>Listening now!</h3>
+          <h3>
+            <T keyName="listeningNow" />
+          </h3>
         </div>
       </div>
       {isSong ? (
