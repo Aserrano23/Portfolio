@@ -6,9 +6,9 @@ const Techs = () => {
     <div className="container container-techs">
       <div className="row">
         <div className="col wow fadeIn">
-          <h1>
+          <h2>
             <T keyName="techs-known" />
-          </h1>
+          </h2>
         </div>
       </div>
 
@@ -23,27 +23,27 @@ const Techs = () => {
       <div className="white-container wow fadeIn">
         <div className="row">
           <div className="col wow fadeIn">
-            <h2>
+            <h3>
               <T keyName="level" />
-            </h2>
+            </h3>
             <Separator />
           </div>
         </div>
         <div className="row mt-3">
           <div className="col center">
-            <h3 className="beginner wow fadeInLeft">
+            <h4 className="beginner wow fadeInLeft">
               <T keyName="beginner" />
-            </h3>
+            </h4>
           </div>
           <div className="col center">
-            <h3 className="intermediate wow fadeInDown">
+            <h4 className="intermediate wow fadeInDown">
               <T keyName="intermediate" />
-            </h3>
+            </h4>
           </div>
           <div className="col center">
-            <h3 className="expert wow fadeInRight">
+            <h4 className="expert wow fadeInRight">
               <T keyName="expert" />
-            </h3>
+            </h4>
           </div>
         </div>
       </div>
@@ -53,9 +53,9 @@ const Techs = () => {
           <div className="col-xl-6 col-lg-6 col-md-6 col-12">
             <div className="row">
               <div className="col wow fadeIn">
-                <h2>
+                <h3>
                   <T keyName="techs" />
-                </h2>
+                </h3>
                 <Separator />
               </div>
             </div>
@@ -76,9 +76,9 @@ const Techs = () => {
           <div className="col-xl-6 col-lg-6 col-md-6 col-12">
             <div className="row">
               <div className="col wow fadeIn">
-                <h2>
+                <h3>
                   <T keyName="languages" />
-                </h2>
+                </h3>
                 <Separator />
               </div>
             </div>

@@ -82,9 +82,9 @@ const SpotifyNowPlaying = () => {
     <div className="container center-v mt-5">
       <div className="row">
         <div className="col wow fadeIn">
-          <h3>
+          <h2>
             <T keyName="listeningNow" />
-          </h3>
+          </h2>
         </div>
       </div>
       {isSong ? (
@@ -100,7 +100,7 @@ const SpotifyNowPlaying = () => {
               className="song-img wow fadeInLeft"
               src={song.item.album.images[0].url}
               width={80}
-              alt=""
+              alt="Spotify album listening"
             />
           </div>
           <div className="song-details container">
@@ -124,7 +124,7 @@ const SpotifyNowPlaying = () => {
             <img
               className="spotify-logo wow fadeIn"
               src="/assets/images/spotify-logo.png"
-              alt=""
+              alt="Spotify logo"
             />
           </a>
         </div>
@@ -135,7 +135,7 @@ const SpotifyNowPlaying = () => {
               className="song-img wow fadeInLeft"
               src="/assets/images/notPlayingImage.jpg"
               width={80}
-              alt=""
+              alt="Not playing placeholder"
             />
           </div>
           <div className="song-details container">
@@ -155,7 +155,7 @@ const SpotifyNowPlaying = () => {
           <img
             className="spotify-logo wow fadeIn"
             src="/assets/images/spotify-logo.png"
-            alt=""
+            alt="Spotify Logo"
           />
         </div>
       )}

@@ -7,7 +7,7 @@ const Navbar = ({ ToggleModal }) => {
       <ul className="nav navbar-nav">
         <li className="navbar-img wow flipInX">
           <div className="logo-navbar-circle">
-            <img src="/assets/images/logo512.png" width="50" alt="" />
+            <img src="/assets/images/logo512.png" width="50" alt="Adrian Serrano Web developer Desarrollador web castellon" />
           </div>
         </li>
       </ul>

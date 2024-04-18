@@ -9,7 +9,11 @@ const Footer = () => {
       <div className="container center-v">
         <div className="circle mt-4 mb-4 wow fadeInDown">
           <a href="https://adrianserrano.me">
-            <img src="/assets/images/logo192.png" alt="" width={"70px"} />
+            <img
+              src="/assets/images/logo192.png"
+              alt="Adrian Serrano Web developer Desarrollador web castellon"
+              width={"70px"}
+            />
           </a>
         </div>
 
@@ -31,17 +35,25 @@ const Footer = () => {
               rel="noreferrer"
               className="rrss-circle"
             >
-              <img src="/assets/images/whatsapp.png" width="20" alt="" />
+              <img
+                src="/assets/images/whatsapp.png"
+                width="20"
+                alt="adrian serrano whatsapp link"
+              />
             </a>
           </div>
           <div className="col rrss-container">
             <a
-              href="mailto:contacto@adrianserrano.me"
+              href="mailto:adrianserranocontacto@gmail.com"
               target="_blank"
               rel="noreferrer"
               className="rrss-circle"
             >
-              <img src="/assets/images/mail.png" width="20" alt="" />
+              <img
+                src="/assets/images/mail.png"
+                width="20"
+                alt="Adrian serrano web developer email"
+              />
             </a>
           </div>
           <div className="col rrss-container">
@@ -51,7 +63,11 @@ const Footer = () => {
               rel="noreferrer"
               className="rrss-circle"
             >
-              <img src="/assets/images/linkedin.png" width="20" alt="" />
+              <img
+                src="/assets/images/linkedin.png"
+                width="20"
+                alt="Adrian serrano web developer linkedin profile"
+              />
             </a>
           </div>
           <div className="col rrss-container">
@@ -61,7 +77,11 @@ const Footer = () => {
               rel="noreferrer"
               className="rrss-circle"
             >
-              <img src="/assets/images/telegram.png" width="20" alt="" />
+              <img
+                src="/assets/images/telegram.png"
+                width="20"
+                alt="Adrian Serrano Web developer Desarrollador web castellon telegram chat"
+              />
             </a>
           </div>
           <div className="col rrss-container">
@@ -71,7 +91,11 @@ const Footer = () => {
               rel="noreferrer"
               className="rrss-circle"
             >
-              <img src="/assets/images/instagram.png" width="20" alt="" />
+              <img
+                src="/assets/images/instagram.png"
+                width="20"
+                alt="Adrian Serrano Web developer Desarrollador web castellon instagram link"
+              />
             </a>
           </div>
           <div className="col rrss-container">
@@ -81,7 +105,11 @@ const Footer = () => {
               rel="noreferrer"
               className="rrss-circle"
             >
-              <img src="/assets/images/github-logo.png" width="25" alt="" />
+              <img
+                src="/assets/images/github-logo.png"
+                width="25"
+                alt="Adrian Serrano Web developer Desarrollador web castellon github"
+              />
             </a>
           </div>
         </div>

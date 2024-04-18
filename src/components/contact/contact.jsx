@@ -8,9 +8,9 @@ const Contact = () => {
     <div className="container">
       <div id="contact" className="row mt-5">
         <div className="col-12 wow fadeIn">
-          <h1>
+          <h2>
             <T keyName="contact" />
-          </h1>
+          </h2>
         </div>
       </div>
 
@@ -28,7 +28,7 @@ const Contact = () => {
             className="contact-photo wow fadeIn"
             src="/assets/images/adrian.jpg"
             width="300"
-            alt=""
+            alt="Adrian Serrano Web developer portrait"
           />
         </div>
         <div className="col-xl-6 col-lg-6 col-md-6 col-12">

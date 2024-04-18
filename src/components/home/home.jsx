@@ -33,9 +33,9 @@ function Home() {
 
           <div className="row mt-4">
             <div className="col-12">
-              <h4>
+              <h2>
                 <T keyName="job" />
-              </h4>
+              </h2>
             </div>
           </div>
         </div>
@@ -54,9 +54,9 @@ function Home() {
           <div className="container animate__animated animate__fadeIn animate__slow">
             <div className="row">
               <div className="col-12">
-                <h1>
+                <h3>
                   <T keyName="about-me" />
-                </h1>
+                </h3>
               </div>
             </div>
 

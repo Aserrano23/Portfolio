@@ -6,9 +6,9 @@ const Projects = () => {
     <div className="container work mt-5 mb-5">
       <div className="row">
         <div className="col-12 wow fadeIn">
-          <h1>
+          <h2>
             <T keyName="my-projects" />
-          </h1>
+          </h2>
         </div>
       </div>
 

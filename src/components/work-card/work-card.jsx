@@ -22,7 +22,7 @@ const WorkCard = ({ name, imgURL, about, work, techs, webURL }) => {
           className="project-img wow fadeIn"
           data-wow-delay={Math.random() + "s"}
           src={imgURL}
-          alt=""
+          alt="Project screenshot"
         />
       </div>
 
@@ -54,9 +54,9 @@ const WorkCard = ({ name, imgURL, about, work, techs, webURL }) => {
 
         <div className="row mt-4">
           <div className="col-12 center">
-            <h2>
+            <h4>
               <T keyName="what-did" />
-            </h2>
+            </h4>
           </div>
         </div>
 
@@ -70,9 +70,9 @@ const WorkCard = ({ name, imgURL, about, work, techs, webURL }) => {
 
         <div className="row mt-4">
           <div className="col-12 center">
-            <h2>
+            <h4>
               <T keyName="tech-used" />
-            </h2>
+            </h4>
           </div>
         </div>
 
@@ -89,67 +89,3 @@ const WorkCard = ({ name, imgURL, about, work, techs, webURL }) => {
 };
 
 export default WorkCard;
-
-{
-  /* <div className="work-card">
-  <div className="work-card-header">
-    <h2>{name}</h2>
-  </div>
-  <div className="work-card-body mt-4">
-    <div className="row">
-      <div className="col-12 center">
-        <img src={imgURL} alt="" />
-      </div>
-    </div>
-
-    <div className="row mt-4">
-      <div className="col-12 center">
-        <p>
-          <T keyName={about} />
-        </p>
-      </div>
-    </div>
-
-    <div className="row mt-4">
-      <div className="col-12 center">
-        <h2>
-          <T keyName="what-did" />
-        </h2>
-      </div>
-    </div>
-
-    <div className="row mt-4">
-      <div className="col-12 center">
-        <p>
-          <T keyName={work} />
-        </p>
-      </div>
-    </div>
-
-    <div className="row mt-4">
-      <div className="col-12 center">
-        <h2>
-          <T keyName="tech-used" />
-        </h2>
-      </div>
-    </div>
-
-    <div className="row mt-4">
-      <div className="col-12 center">
-        <p>
-          <T keyName={techs} />
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div className="row work-card-footer">
-    <hr />
-    <div className="col-12">
-      <a href={webURL} rel="noreferrer" target="_blank" className="as-btn">
-        <T keyName="see-more" />
-      </a>
-    </div>
-  </div>
-</div> */
-}

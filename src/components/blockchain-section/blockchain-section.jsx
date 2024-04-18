@@ -6,7 +6,7 @@ const BlockchainSection = () => {
     <div className="container mt-5 mb-5">
       <div className="row">
         <div className="col wow fadeIn">
-          <h1>Blockchain</h1>
+          <h2>Blockchain</h2>
         </div>
       </div>
 
