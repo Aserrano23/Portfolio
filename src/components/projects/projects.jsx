@@ -84,11 +84,21 @@ const Projects = () => {
         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
           <WorkCard
             name="Liquid miners"
-            imgURL="/assets/images/liquidminers.png"
+            imgURL="/assets/images/zkmakers.png"
             about="aboutLiquid"
             work="liquid-work"
             techs="liquid-techs"
-            webURL="https://test.liquidminers.com/"
+            webURL="https://app.zkmakers.com/"
+          />
+        </div>
+        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
+          <WorkCard
+            name="888HongBao"
+            imgURL="/assets/images/888hongbao.png"
+            about="about888"
+            work="888-work"
+            techs="888-techs"
+            webURL="https://red-envelope-testnet.web.app/"
           />
         </div>
       </div>
