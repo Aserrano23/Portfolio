@@ -83,7 +83,7 @@ const Projects = () => {
         </div>
         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
           <WorkCard
-            name="Liquid miners"
+            name="zkMakers"
             imgURL="/assets/images/zkmakers.png"
             about="aboutLiquid"
             work="liquid-work"
