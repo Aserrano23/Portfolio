@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="purple-box mt-5 wow fadeIn">
       <div className="container center-v">
         <div className="circle mt-4 mb-4 wow fadeInDown">
-          <a href="https://adrianserrano.me">
+          <a href="https://asdev.es">
             <img
               src="/assets/images/logo192.png"
               alt="Adrian Serrano Web developer Desarrollador web castellon"
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
           <div className="col rrss-container">
             <a
-              href="mailto:adrianserranocontacto@gmail.com"
+              href="mailto:adrian@asdev.es"
               target="_blank"
               rel="noreferrer"
               className="rrss-circle"
@@ -117,7 +117,7 @@ const Footer = () => {
         <div className="row mt-4">
           <div className="col wow fadeInUp">
             <h5>
-              <T keyName="made-by-me" /> ©adrianserrano.me 2023
+              <T keyName="made-by-me" /> ©AsDev 2024
             </h5>
           </div>
         </div>

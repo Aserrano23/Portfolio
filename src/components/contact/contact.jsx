@@ -35,7 +35,7 @@ const Contact = () => {
           <div className="row mt-5">
             <div className="col">
               <form
-                action="https://usebasin.com/f/d68a1ce2766e"
+                action="https://usebasin.com/f/f043f1b3f374"
                 method="POST"
                 encType="multipart/form-data"
                 id="form"
