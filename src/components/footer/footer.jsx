@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="row rrss-icons wow fadeIn">
           <div className="col rrss-container">
             <a
-              href="https://wa.me/34600206194"
+              href="https://wa.me/34624181206"
               target="_blank"
               rel="noreferrer"
               className="rrss-circle"

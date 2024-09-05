@@ -114,7 +114,7 @@ function Home() {
       </Modal>
 
       <a
-        href="https://wa.me/34600206194"
+        href="https://wa.me/34624181206"
         className="whatsapp-button animate__animated animate__bounce"
         target="_blank"
         rel="noreferrer"
