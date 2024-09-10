@@ -3,6 +3,7 @@ import { TolgeeProvider } from "@tolgee/react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/home/home";
 import BlockchainPage from "./components/blockchain-page/blockchain-page";
+import InfoPage from "./components/info-page/info-page";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/blockchain" element={<BlockchainPage />} />
+          <Route exact path="/info" element={<InfoPage />} />
         </Routes>
       </BrowserRouter>
     </TolgeeProvider>

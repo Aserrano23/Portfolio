@@ -1,0 +1,31 @@
+.info-page-container {
+  margin: 50px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .content {
+    max-width: 800px;
+    font-size: 20pt;
+    text-align: left;
+
+    h1 {
+      font-size: 25pt;
+      margin: 0 0 40px 0;
+    }
+
+    p {
+      text-align: left;
+      font-size: 18pt;
+      letter-spacing: 1px;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .bigger {
+      font-size: 20pt;
+    }
+  }
+}
