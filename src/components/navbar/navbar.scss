@@ -15,7 +15,14 @@ $main_color: #3a31b2;
 
 .navbar-nav {
   flex-direction: row;
+  display: flex;
+  align-items: center;
 }
+
+.navbar-img {
+  cursor: pointer;
+}
+
 @media (max-width: 340px) {
   .nav.navbar-nav {
     width: 100%;

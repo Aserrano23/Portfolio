@@ -1,0 +1,246 @@
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 50px 0;
+
+  .separator {
+    height: 5px;
+    background-color: #3a31b2;
+    width: 100px;
+    border-radius: 10px;
+  }
+
+  .separator {
+    height: 5px;
+    background-color: #3a31b2;
+    width: 100px;
+    border-radius: 10px;
+  }
+
+  h2 {
+    font-size: 30pt;
+    font-weight: bold;
+    color: #3a31b2;
+  }
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 90%;
+    }
+
+    .shape {
+      background-color: #3a31b266;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    h1 {
+      font-family: "genos";
+      font-size: 50pt;
+      position: absolute;
+      z-index: 1;
+      color: #ffffff;
+      top: 150px;
+    }
+
+    p {
+      font-family: "genos";
+      font-size: 20pt;
+      position: absolute;
+      z-index: 1;
+      color: #ffffff;
+    }
+  }
+
+  .block-separator {
+    width: 100%;
+    height: 100px;
+    background-color: #3a31b2;
+  }
+
+  .company {
+    margin: 50px 0 0 0;
+    max-width: 1500px;
+
+    .company-container {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 50%;
+      }
+
+      .text {
+        max-width: 50%;
+      }
+    }
+  }
+
+  .services {
+    margin: 60px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    .services-items-container {
+      display: flex;
+      width: 100%;
+      max-width: 1500px;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .service-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        width: 100%;
+        max-width: 45%;
+        border-radius: 8px;
+        gap: 20px;
+        transition: all ease-in-out 0.2s;
+        -webkit-box-shadow: 2px 2px 17px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 2px 2px 17px -6px rgba(0, 0, 0, 0.75);
+        box-shadow: 2px 2px 17px -6px rgba(0, 0, 0, 0.75);
+
+        p {
+          max-width: 400px;
+          margin: 20px 0 0 0;
+        }
+      }
+
+      .service-item:hover {
+        transform: translateY(-5px) translateX(-1px);
+      }
+    }
+  }
+
+  .CTA {
+    margin: 100px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-weight: bold;
+      color: #3a31b2;
+      font-size: 35pt;
+    }
+
+    p {
+      font-weight: bold;
+      max-width: 500px;
+    }
+
+    button {
+      margin: 40px 0 0 0;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .services-container {
+    .company {
+      .company-container {
+        flex-direction: column;
+
+        img {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .services-container {
+    .header {
+      h1 {
+        top: 100px;
+        line-height: 50px;
+      }
+      p {
+        top: 250px;
+      }
+      img {
+        height: 70%;
+      }
+    }
+
+    .company {
+      .company-container {
+        flex-direction: column;
+
+        img {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .services-container {
+    .services {
+      .services-items-container {
+        .service-item {
+          max-width: 95%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .services-container {
+    .header {
+      height: 400px;
+      img {
+        height: 60%;
+      }
+    }
+
+    .company {
+      .company-container {
+        flex-direction: column;
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 377px) {
+  .services-container {
+    .header {
+      h1 {
+        font-size: 40pt;
+      }
+      p {
+        top: 220px;
+        line-height: 30px;
+      }
+    }
+  }
+}

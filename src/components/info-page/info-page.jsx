@@ -1,7 +1,7 @@
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import "./info-page.scss";
 import Navbar from "../navbar/navbar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../footer/footer";
 import Modal from "../modal/modal";
 import { T, useSetLanguage, useTranslate } from "@tolgee/react";
@@ -11,11 +11,18 @@ const InfoPage = () => {
   const name = searchParams.get("name");
   const business = searchParams.get("business");
   const sender = searchParams.get("sender");
-
+  const navigate = useNavigate();
   const t = useTranslate();
   const setLanguage = useSetLanguage();
   const [modal, setModal] = useState(false);
   const Toggle = () => setModal(!modal);
+
+  useEffect(() => {
+    console.log(name, business, sender);
+    if (!name || !business || !sender) {
+      navigate("/");
+    }
+  }, [business, name, sender, navigate]);
   return (
     <>
       <Navbar ToggleModal={Toggle} />

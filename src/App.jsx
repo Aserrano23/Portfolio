@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/home/home";
 import BlockchainPage from "./components/blockchain-page/blockchain-page";
 import InfoPage from "./components/info-page/info-page";
+import { ServicesPage } from "./components/services-page/services-page";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/blockchain" element={<BlockchainPage />} />
           <Route exact path="/info" element={<InfoPage />} />
+          <Route exact path="/services" element={<ServicesPage />} />
         </Routes>
       </BrowserRouter>
     </TolgeeProvider>

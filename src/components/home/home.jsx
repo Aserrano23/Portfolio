@@ -11,11 +11,13 @@ import BlockchainSection from "../blockchain-section/blockchain-section";
 import Techs from "../techs/techs";
 import Footer from "../footer/footer";
 import SpotifyNowPlaying from "../spotify-now-playing/spotify-now-playing";
+import { useNavigate } from "react-router-dom";
 function Home() {
   const t = useTranslate();
   const setLanguage = useSetLanguage();
   const [modal, setModal] = useState(false);
   const Toggle = () => setModal(!modal);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -76,8 +78,39 @@ function Home() {
           <Techs />
         </div>
 
+        <div className="services-section">
+          <h2>Servicios</h2>
+          <p>
+            En AsDev Ofrecemos soluciones innovadoras en desarrollo web y
+            tecnología blockchain, adaptadas a tus necesidades. Ya sea un sitio
+            web o una solución blockchain, lo hacemos posible.
+          </p>
+          <button
+            className="as-btn wow fadeIn"
+            onClick={() => navigate("/services")}
+          >
+            Ver servicios
+          </button>
+        </div>
+        <Separator />
         <BlockchainSection />
         <Separator />
+
+        <div id="contact" className="row mt-5">
+          <div className="col-12 wow fadeIn">
+            <h2>
+              <T keyName="contact" />
+            </h2>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col center wow fadeIn">
+            <p>
+              <T keyName="contact-description" />
+            </p>
+          </div>
+        </div>
         <Contact />
         <SpotifyNowPlaying />
       </main>

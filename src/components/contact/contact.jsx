@@ -6,22 +6,6 @@ const Contact = () => {
 
   return (
     <div className="container">
-      <div id="contact" className="row mt-5">
-        <div className="col-12 wow fadeIn">
-          <h2>
-            <T keyName="contact" />
-          </h2>
-        </div>
-      </div>
-
-      <div className="row">
-        <div className="col center wow fadeIn">
-          <p>
-            <T keyName="contact-description" />
-          </p>
-        </div>
-      </div>
-
       <div className="row">
         <div className="col-xl-6 col-lg-6 col-md-6 col-12 center-v">
           <img
