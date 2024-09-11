@@ -59,6 +59,7 @@
       z-index: 1;
       color: #ffffff;
       top: 150px;
+      padding: 0 10px;
     }
 
     p {
@@ -67,6 +68,7 @@
       position: absolute;
       z-index: 1;
       color: #ffffff;
+      padding: 0 10px;
     }
   }
 
@@ -176,11 +178,8 @@
   .services-container {
     .header {
       h1 {
-        top: 100px;
         line-height: 50px;
-      }
-      p {
-        top: 250px;
+        font-size: 40pt;
       }
       img {
         height: 70%;
@@ -201,6 +200,11 @@
 
 @media (max-width: 600px) {
   .services-container {
+    .header {
+      h1 {
+        font-size: 30pt;
+      }
+    }
     .services {
       .services-items-container {
         .service-item {
@@ -218,6 +222,10 @@
       img {
         height: 60%;
       }
+      p {
+        top: 200px;
+        font-size: 18pt;
+      }
     }
 
     .company {
@@ -231,15 +239,29 @@
   }
 }
 
-@media (max-width: 377px) {
+@media (max-width: 434px) {
   .services-container {
     .header {
-      h1 {
-        font-size: 40pt;
+      height: 350px;
+      img {
+        height: 80%;
       }
       p {
-        top: 220px;
+        top: 150px;
+        font-size: 18pt;
+      }
+      h1 {
+        top: 80px;
         line-height: 30px;
+      }
+    }
+
+    .company {
+      .company-container {
+        flex-direction: column;
+        img {
+          width: 80%;
+        }
       }
     }
   }
