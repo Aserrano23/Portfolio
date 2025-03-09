@@ -1,0 +1,162 @@
+$main_color: #3a31b2;
+$hover_color: darken($main_color, 10%);
+$text_color: #333;
+$secondary_text_color: #666;
+
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  .blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    .back-button {
+      background: $main_color;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: background 0.2s;
+
+      &:hover {
+        background: $hover_color;
+      }
+    }
+  }
+
+  .blog-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $text_color;
+  }
+
+  .error-message {
+    color: #d9534f;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .no-posts {
+    font-size: 1.5rem;
+    color: $secondary_text_color;
+  }
+
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    margin-top: 2rem;
+  }
+
+  .post-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+    display: block; // Asegura que el <Link> se comporte como una card
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .thumbnail {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .post-content {
+      padding: 1rem;
+
+      .post-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: $text_color;
+      }
+
+      .post-author {
+        font-size: 0.9rem;
+        color: $secondary_text_color;
+        margin-bottom: 1rem;
+      }
+
+      .post-excerpt {
+        font-size: 1rem;
+        color: $text_color;
+      }
+    }
+  }
+
+  /* Skeleton Loader */
+  .skeleton {
+    background: #f2f2f2;
+    animation: shimmer 1.5s infinite linear;
+  }
+
+  .skeleton-thumbnail {
+    width: 100%;
+    height: 200px;
+  }
+
+  .skeleton-text {
+    height: 1rem;
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  .skeleton-text.short {
+    width: 50%;
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200px 0;
+    }
+    100% {
+      background-position: 200px 0;
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-container {
+    padding: 1rem;
+  }
+
+  .blog-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .back-button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .blog-title {
+    font-size: 2rem;
+  }
+
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+}

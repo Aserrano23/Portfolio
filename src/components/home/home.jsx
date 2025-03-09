@@ -1,28 +1,20 @@
 import "./home.scss";
-import { T, useTranslate, useSetLanguage } from "@tolgee/react";
-import { useState } from "react";
-import Modal from "../modal/modal";
-import Navbar from "../navbar/navbar";
+import { T } from "@tolgee/react";
 import Separator from "../separator/separator";
 import Contact from "../contact/contact";
 import "animate.css";
 import Projects from "../projects/projects";
 import BlockchainSection from "../blockchain-section/blockchain-section";
 import Techs from "../techs/techs";
-import Footer from "../footer/footer";
+import LatestPosts from "../latest-posts/latest-posts";
 import SpotifyNowPlaying from "../spotify-now-playing/spotify-now-playing";
 import { useNavigate } from "react-router-dom";
+
 function Home() {
-  const t = useTranslate();
-  const setLanguage = useSetLanguage();
-  const [modal, setModal] = useState(false);
-  const Toggle = () => setModal(!modal);
   const navigate = useNavigate();
 
   return (
     <>
-      <Navbar ToggleModal={Toggle} />
-
       <main>
         <div className="animate__animated animate__slideInDown">
           <div className="row mt-5">
@@ -96,6 +88,10 @@ function Home() {
         <BlockchainSection />
         <Separator />
 
+        <LatestPosts />
+
+        <Separator />
+
         <div id="contact" className="row mt-5">
           <div className="col-12 wow fadeIn">
             <h2>
@@ -114,37 +110,6 @@ function Home() {
         <Contact />
         <SpotifyNowPlaying />
       </main>
-
-      <Footer />
-
-      <Modal
-        show={modal}
-        close={() => {
-          Toggle();
-        }}
-        title={t("lang-select")}
-        textButton={t("accept")}
-        animation={"animate__animated animate__fadeIn"}
-      >
-        <div className="row">
-          <div className="col-6 end">
-            <button
-              className="as-btn-outline"
-              onClick={() => setLanguage("es-ES")}
-            >
-              <T keyName="spanish" />
-            </button>
-          </div>
-          <div className="col-6 start">
-            <button
-              className="as-btn-outline"
-              onClick={() => setLanguage("en")}
-            >
-              <T keyName="english" />
-            </button>
-          </div>
-        </div>
-      </Modal>
 
       <a
         href="https://wa.me/34624181206"

@@ -5,6 +5,9 @@ import Home from "./components/home/home";
 import BlockchainPage from "./components/blockchain-page/blockchain-page";
 import InfoPage from "./components/info-page/info-page";
 import { ServicesPage } from "./components/services-page/services-page";
+import { Blog } from "./components/blog/blog";
+import { Layout } from "./components/layout/Layout";
+import BlogPost from "./components/blog-post/blog-post";
 
 function App() {
   return (
@@ -16,11 +19,16 @@ function App() {
     >
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/home" element={<Home />} />
-          <Route exact path="/blockchain" element={<BlockchainPage />} />
-          <Route exact path="/info" element={<InfoPage />} />
-          <Route exact path="/services" element={<ServicesPage />} />
+          {/* Todas las rutas dentro del Layout para que Navbar y Footer sean fijos */}
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="home" element={<Home />} />
+            <Route path="blockchain" element={<BlockchainPage />} />
+            <Route path="info" element={<InfoPage />} />
+            <Route path="services" element={<ServicesPage />} />
+            <Route path="blog" element={<Blog />} />
+            <Route path="blog/:slug" element={<BlogPost />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </TolgeeProvider>
