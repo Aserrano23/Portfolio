@@ -54,9 +54,12 @@ const LatestPosts = () => {
                 <div className="post-content">
                   <h3 className="post-title">{post.title}</h3>
                   <p className="post-author">Por {post.owner}</p>
-                  <p className="post-excerpt">
-                    {post.content.substring(0, 100)}...
-                  </p>
+                  <div
+                    className="post-excerpt"
+                    dangerouslySetInnerHTML={{
+                      __html: post.content.substring(0, 200) + "...",
+                    }}
+                  />
                 </div>
               </Link>
             ))}
