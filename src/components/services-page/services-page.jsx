@@ -1,24 +1,15 @@
-import Footer from "../footer/footer";
-import Navbar from "../navbar/navbar";
 import "./services-page.scss";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Contact from "../contact/contact";
-import Modal from "../modal/modal";
-import { T, useSetLanguage, useTranslate } from "@tolgee/react";
+import { T } from "@tolgee/react";
 
 export const ServicesPage = () => {
-  const t = useTranslate();
-  const setLanguage = useSetLanguage();
-  const [modal, setModal] = useState(false);
-  const Toggle = () => setModal(!modal);
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <>
-      <Navbar ToggleModal={Toggle} />
       <div className="services-container">
         <div className="header">
           <img src="/assets/images/header-bg.svg" alt="" />
@@ -177,35 +168,7 @@ export const ServicesPage = () => {
           <Contact />
         </div>
       </div>
-      <Footer />
-      <Modal
-        show={modal}
-        close={() => {
-          Toggle();
-        }}
-        title={t("lang-select")}
-        textButton={t("accept")}
-        animation={"animate__animated animate__fadeIn"}
-      >
-        <div className="row">
-          <div className="col-6 end">
-            <button
-              className="as-btn-outline"
-              onClick={() => setLanguage("es-ES")}
-            >
-              <T keyName="spanish" />
-            </button>
-          </div>
-          <div className="col-6 start">
-            <button
-              className="as-btn-outline"
-              onClick={() => setLanguage("en")}
-            >
-              <T keyName="english" />
-            </button>
-          </div>
-        </div>
-      </Modal>
+
       <a
         href="https://wa.me/34624181206"
         className="whatsapp-button animate__animated animate__bounce"

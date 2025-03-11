@@ -10,6 +10,7 @@ export const Layout = () => {
   const t = useTranslate();
   const setLanguage = useSetLanguage();
   const Toggle = () => setModal(!modal);
+
   return (
     <div className="layout">
       <Navbar ToggleModal={Toggle} />
