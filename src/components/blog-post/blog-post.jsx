@@ -13,7 +13,7 @@ const BlogPost = () => {
 
   return (
     <>
-      {!loading && !error && post && (
+      {/* {!loading && !error && post && (
         <Helmet>
           <title>AsDev Blog | {post.title}</title>
           <meta
@@ -33,7 +33,7 @@ const BlogPost = () => {
           <meta property="og:type" content="article" />
           <meta name="robots" content="index, follow" />
         </Helmet>
-      )}
+      )} */}
       <section className="blog-post-container">
         {/* Botón para volver al blog */}
         <div className="post-header">
