@@ -1,7 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://www.asdev.es/</loc>
-<lastmod>2024-09-05</lastmod>
-</url>
+  <!-- Página de inicio -->
+  <url>
+    <loc>https://asdev.es/</loc>
+    <lastmod>2025-03-13</lastmod>
+  </url>
+
+  <!-- Sección "Sobre mí" -->
+  <url>
+    <loc>https://asdev.es/#sobre-mi</loc>
+    <lastmod>2025-03-13</lastmod>
+  </url>
+
+  <!-- Sección "Proyectos" -->
+  <url>
+    <loc>https://asdev.es/#proyectos</loc>
+    <lastmod>2025-03-13</lastmod>
+  </url>
+
+  <!-- Sección "Tecnologías y Lenguajes" -->
+  <url>
+    <loc>https://asdev.es/#tecnologias</loc>
+    <lastmod>2025-03-13</lastmod>
+  </url>
+
+  <!-- Sección "Servicios" -->
+  <url>
+    <loc>https://asdev.es/#servicios</loc>
+    <lastmod>2025-03-13</lastmod>
+  </url>
+
+  <!-- Sección "Blockchain" -->
+  <url>
+    <loc>https://asdev.es/#blockchain</loc>
+    <lastmod>2025-03-13</lastmod>
+  </url>
+
+  <!-- Sección "Últimos Posts" -->
+  <url>
+    <loc>https://asdev.es/#ultimos-posts</loc>
+    <lastmod>2025-03-13</lastmod>
+  </url>
+
+  <!-- Sección "Contacto" -->
+  <url>
+    <loc>https://asdev.es/#contacto</loc>
+    <lastmod>2025-03-13</lastmod>
+  </url>
+
+  <!-- Página principal del Blog -->
+  <url>
+    <loc>https://asdev.es/blog</loc>
+    <lastmod>2025-03-13</lastmod>
+  </url>
+
+  <!-- Entrada individual del Blog -->
+  <url>
+    <loc>https://asdev.es/blog/how-to-setup-react-typescript-and-tailwind-css-with-vite-in-a-project-9-3-2025</loc>
+    <lastmod>2025-03-09</lastmod>
+  </url>
 </urlset>

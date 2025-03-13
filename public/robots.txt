@@ -1,3 +1,6 @@
-# https://www.robotstxt.org/robotstxt.html
+# Permite que todos los bots rastreen el sitio
 User-agent: *
 Disallow:
+
+# Indica el sitemap para facilitar la indexación en Google
+Sitemap: https://asdev.es/sitemap.xml
