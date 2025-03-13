@@ -117,7 +117,7 @@ const Footer = () => {
         <div className="row mt-4">
           <div className="col wow fadeInUp">
             <h5>
-              <T keyName="made-by-me" /> ©AsDev 2024
+              <T keyName="made-by-me" /> ©AsDev {new Date().getFullYear()}
             </h5>
           </div>
         </div>
